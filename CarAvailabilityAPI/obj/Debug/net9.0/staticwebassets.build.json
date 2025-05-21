@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "coU6Ywr+phoy462GxMin26d4WRreYapHXC4V5RK2+Ks=",
+  "Source": "CarAvailabilityAPI",
+  "BasePath": "_content/CarAvailabilityAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
