@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+ /* Universe Background Effects */
+
+.animated-bg {
+  background: radial-gradient(circle at bottom, #0d0d2b 0%, #000000 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.stars {
+  background: url("https://www.transparenttextures.com/patterns/stardust.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 400%;
+  opacity: 0.12;
+  animation: moveStars 120s linear infinite;
+  z-index: 0;
+}
+
+.nebula {
+  background: url("https://www.transparenttextures.com/patterns/noise-pattern-with-stars.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 300%;
+  opacity: 0.08;
+  animation: moveNebula 180s linear infinite;
+  z-index: 1;
+}
+
+.gradient-overlay {
+  background: linear-gradient(120deg, rgba(255, 0, 255, 0.08), rgba(0, 255, 255, 0.08));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  animation: gradientShift 60s ease infinite;
+  z-index: 2;
+}
+
+/* Animations */
+@keyframes moveStars {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-50%, -50%); }
+}
+
+@keyframes moveNebula {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-25%, -25%); }
+}
+
+@keyframes gradientShift {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
